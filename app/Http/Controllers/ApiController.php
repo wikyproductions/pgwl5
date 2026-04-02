@@ -1,0 +1,37 @@
+<?php
+
+namespace App\Http\Controllers;
+
+use Illuminate\Http\Request;
+use App\Models\pointsModel;
+use App\Models\polylinesModel;
+use App\Models\polygonModel;
+
+
+class ApiController extends Controller
+{
+    public function __construct()
+    {
+        $this->points = new pointsModel();
+        $this->polylines = new polylinesModel();
+        $this->polygon = new polygonModel();
+    }
+
+    public function geojson_points()
+    {
+        $points = $this->points->geojson_points();
+        return response()->json($points, 200, [], JSON_NUMERIC_CHECK);
+    }
+
+    public function geojson_polylines()
+    {
+        $polylines = $this->polylines->geojson_polylines();
+        return response()->json($polylines, 200, [], JSON_NUMERIC_CHECK);
+    }
+
+    public function geojson_polygon()
+    {
+        $polygon = $this->polygon->geojson_polygon();
+        return response()->json($polygon, 200, [], JSON_NUMERIC_CHECK);
+    }
+}

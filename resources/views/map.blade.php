@@ -37,29 +37,26 @@
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <form action="{{ route('points.store') }}" method="post">
-                @csrf
-                <div class="modal-body">
-                    <div class="mb-3">
-                        <label for="name" class="form-label">Name</label>
-                        <input type="text" class="form-control" id="name"
-                            name="name" placeholder="Fill name here...">
+                    @csrf
+                    <div class="modal-body">
+                        <div class="mb-3">
+                            <label for="name" class="form-label">Name</label>
+                            <input type="text" class="form-control" id="name" name="name"
+                                placeholder="Fill name here...">
+                        </div>
+                        <div class="mb-3">
+                            <label for="description" class="form-label">Description</label>
+                            <textarea class="form-control" id="description" name="description" rows="3"></textarea>
+                        </div>
+                        <div class="mb-3">
+                            <label for="geometry_point" class="form-label">Geometry</label>
+                            <textarea class="form-control" id="geometry_point" name="geometry_point" rows="3"></textarea>
+                        </div>
                     </div>
-                    <div class="mb-3">
-                        <label for="description" class="form-label">Description</label>
-                        <textarea class="form-control" id="description"
-                        name="description" rows="3"></textarea>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <button type="submit" class="btn btn-primary">Save</button>
                     </div>
-                    <div class="mb-3">
-                        <label for="geometry_point" class="form-label">Geometry</label>
-                        <textarea class="form-control" id="geometry_point"
-                        name="geometry_point" rows="3"></textarea>
-                    </div>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary"
-                    data-bs-dismiss="modal">Close</button>
-                    <button type="submit" class="btn btn-primary">Save</button>
-                </div>
                 </form>
             </div>
         </div>
@@ -74,29 +71,26 @@
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <form action="{{ route('polylines.store') }}" method="post">
-                @csrf
-                <div class="modal-body">
-                    <div class="mb-3">
-                        <label for="name" class="form-label">Name</label>
-                        <input type="text" class="form-control" id="name"
-                            name="name" placeholder="Fill name here...">
+                    @csrf
+                    <div class="modal-body">
+                        <div class="mb-3">
+                            <label for="name" class="form-label">Name</label>
+                            <input type="text" class="form-control" id="name" name="name"
+                                placeholder="Fill name here...">
+                        </div>
+                        <div class="mb-3">
+                            <label for="description" class="form-label">Description</label>
+                            <textarea class="form-control" id="description" name="description" rows="3"></textarea>
+                        </div>
+                        <div class="mb-3">
+                            <label for="geometry_polyline" class="form-label">Geometry</label>
+                            <textarea class="form-control" id="geometry_polyline" name="geometry_polyline" rows="3"></textarea>
+                        </div>
                     </div>
-                    <div class="mb-3">
-                        <label for="description" class="form-label">Description</label>
-                        <textarea class="form-control" id="description"
-                        name="description" rows="3"></textarea>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <button type="submit" class="btn btn-primary">Save</button>
                     </div>
-                    <div class="mb-3">
-                        <label for="geometry_polyline" class="form-label">Geometry</label>
-                        <textarea class="form-control" id="geometry_polyline"
-                        name="geometry_polyline" rows="3"></textarea>
-                    </div>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary"
-                    data-bs-dismiss="modal">Close</button>
-                    <button type="submit" class="btn btn-primary">Save</button>
-                </div>
                 </form>
             </div>
         </div>
@@ -111,34 +105,30 @@
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <form action="{{ route('polygon.store') }}" method="post">
-                @csrf
-                <div class="modal-body">
-                    <div class="mb-3">
-                        <label for="name" class="form-label">Name</label>
-                        <input type="text" class="form-control" id="name"
-                            name="name" placeholder="Fill name here...">
+                    @csrf
+                    <div class="modal-body">
+                        <div class="mb-3">
+                            <label for="name" class="form-label">Name</label>
+                            <input type="text" class="form-control" id="name" name="name"
+                                placeholder="Fill name here...">
+                        </div>
+                        <div class="mb-3">
+                            <label for="description" class="form-label">Description</label>
+                            <textarea class="form-control" id="description" name="description" rows="3"></textarea>
+                        </div>
+                        <div class="mb-3">
+                            <label for="geometry_polygon" class="form-label">Geometry</label>
+                            <textarea class="form-control" id="geometry_polygon" name="geometry_polygon" rows="3"></textarea>
+                        </div>
                     </div>
-                    <div class="mb-3">
-                        <label for="description" class="form-label">Description</label>
-                        <textarea class="form-control" id="description"
-                        name="description" rows="3"></textarea>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <button type="submit" class="btn btn-primary">Save</button>
                     </div>
-                    <div class="mb-3">
-                        <label for="geometry_polygon" class="form-label">Geometry</label>
-                        <textarea class="form-control" id="geometry_polygon"
-                        name="geometry_polygon" rows="3"></textarea>
-                    </div>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary"
-                    data-bs-dismiss="modal">Close</button>
-                    <button type="submit" class="btn btn-primary">Save</button>
-                </div>
                 </form>
             </div>
         </div>
     </div>
-
 @endsection
 
 @section('scripts')
@@ -200,7 +190,7 @@
                 $('#modalInputPolyline').modal('show');
 
                 //modal dismiss reload page
-                $('#modalInputPolyline').on('hidden.bs.modal', function () {
+                $('#modalInputPolyline').on('hidden.bs.modal', function() {
                     location.reload();
                 });
 
@@ -212,7 +202,7 @@
                 $('#modalInputPolygon').modal('show');
 
                 //modal dismiss reload page
-                $('#modalInputPolygon').on('hidden.bs.modal', function () {
+                $('#modalInputPolygon').on('hidden.bs.modal', function() {
                     location.reload();
                 });
             } else if (type === 'marker') {
@@ -223,7 +213,7 @@
                 $('#modalInputPoint').modal('show');
 
                 //modal dismiss reload page
-                $('#modalInputPoint').on('hidden.bs.modal', function () {
+                $('#modalInputPoint').on('hidden.bs.modal', function() {
                     location.reload();
                 });
             } else {
@@ -242,11 +232,98 @@
             'https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}'
         );
 
+        //Point Layer
+        var points = L.geoJSON(null, {
+            // onEachFeature
+            onEachFeature: function(feature, layer) {
+                // variable popup content
+                var popup_content = "Nama: " + feature.properties.name + "<br>" +
+                    "Deskripsi: " + feature.properties.description + "<br>" +
+                    "Dibuat: " + feature.properties.created_at;
+
+
+                layer.on({
+                    click: function(e) {
+                        points.bindPopup(popup_content);
+                    },
+                });
+            },
+        });
+
+        // Polyline Layer
+        var polylines = L.geoJSON(null, {
+            style: function(feature) {
+                return {
+                    color: '#ff0000', // warna garis
+                    weight: 3,
+                    opacity: 1
+                };
+            },
+            onEachFeature: function(feature, layer) {
+                var popup_content = "Nama: " + feature.properties.name + "<br>" +
+                    "Deskripsi: " + feature.properties.description + "<br>" +
+                    "Dibuat: " + feature.properties.created_at;
+
+                layer.on({
+                    click: function(e) {
+                        polylines.bindPopup(popup_content);
+                    },
+                });
+            },
+        });
+
+        // Polygon Layer
+        var polygon = L.geoJSON(null, {
+            style: function(feature) {
+                return {
+                    color: '#0000ff', // warna border
+                    fillColor: '#0000ff', // warna isi
+                    fillOpacity: 0.3,
+                    weight: 2,
+                    opacity: 1
+                };
+            },
+            onEachFeature: function(feature, layer) {
+                var popup_content = "Nama: " + feature.properties.name + "<br>" +
+                    "Deskripsi: " + feature.properties.description + "<br>" +
+                    "Dibuat: " + feature.properties.created_at;
+
+                layer.on({
+                    click: function(e) {
+                        polygon.bindPopup(popup_content);
+                    },
+                });
+            },
+        });
+
+        $.getJSON("{{ route('geojson.points') }}", function(data) {
+            points.addData(data); // Menambahkan data ke dalam GeoJSON Point Sarana Prasarana
+            map.addLayer(points); // Menambahkan GeoJSON Point Sarana Prasarana ke dalam peta
+        });
+
+        $.getJSON("{{ route('geojson.polylines') }}", function(data) {
+            polylines.addData(data); // Menambahkan data ke dalam GeoJSON Point Sarana Prasarana
+            map.addLayer(polylines); // Menambahkan GeoJSON Point Sarana Prasarana ke dalam peta
+        });
+
+        $.getJSON("{{ route('geojson.polygon') }}", function(data) {
+            polygon.addData(data); // Menambahkan data ke dalam GeoJSON Point Sarana Prasarana
+            map.addLayer(polygon); // Menambahkan GeoJSON Point Sarana Prasarana ke dalam peta
+        });
+
+        //Control Layer
         var baseMaps = {
             "OpenStreetMap": map._layers[Object.keys(map._layers)[0]],
             "Satellite": satellite
         };
 
-        L.control.layers(baseMaps).addTo(map);
+        var overlayMaps = {
+            "Point": points,
+            "Polyline": polylines,
+            "Polygon": polygon
+        };
+
+        L.control.layers(baseMaps, overlayMaps).addTo(map);
+
     </script>
 @endsection
